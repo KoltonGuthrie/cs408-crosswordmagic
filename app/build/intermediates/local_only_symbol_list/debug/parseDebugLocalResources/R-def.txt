@@ -1,0 +1,18 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id output
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+raw dao
+raw puzzle
+string app_name
+string placeholder_text
+style Base.Theme.CrosswordMagic
+style Theme.CrosswordMagic
+xml backup_rules
+xml data_extraction_rules

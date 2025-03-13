@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-30:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\guthr\\.gradle\\caches\\8.10.2\\transforms\\aa3a73e427ca275d0fc8d631f12add96\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
