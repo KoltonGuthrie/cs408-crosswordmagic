@@ -96,11 +96,10 @@ public class PuzzleDAO {
 
             /* get data for puzzle */
 
-            /*
-
-            INSERT YOUR CODE HERE
-
-            */
+            params.put("name", cursor.getString(cursor.getColumnIndexOrThrow("name")));
+            params.put("description", cursor.getString(cursor.getColumnIndexOrThrow("description")));
+            params.put("height", cursor.getString(cursor.getColumnIndexOrThrow("height")));
+            params.put("width", cursor.getString(cursor.getColumnIndexOrThrow("width")));
 
             if (!params.isEmpty())
                 puzzle = new Puzzle(params);
