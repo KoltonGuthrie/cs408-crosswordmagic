@@ -15,6 +15,7 @@ import com.opencsv.CSVReaderBuilder;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -130,14 +131,17 @@ public class DAOFactory extends SQLiteOpenHelper {
 
                         params = new HashMap<>();
 
-                        /*
-
-                        INSERT YOUR CODE HERE
-
-                        */
+                        params.put(properties.getProperty("sql_field_puzzleid"), String.valueOf(puzzleid));
+                        params.put(properties.getProperty("sql_field_row"), fields[0]);
+                        params.put(properties.getProperty("sql_field_column"), fields[1]);
+                        params.put(properties.getProperty("sql_field_box"), fields[2]);
+                        params.put(properties.getProperty("sql_field_direction"), fields[3]);
+                        params.put(properties.getProperty("sql_field_word"), fields[4]);
+                        params.put(properties.getProperty("sql_field_clue"), fields[5]);
 
                         Word newWord = new Word(params);
-                        wordDAO.create(db, newWord);
+
+                        int id = wordDAO.create(db, newWord);
 
                     }
 

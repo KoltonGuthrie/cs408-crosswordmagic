@@ -1,8 +1,11 @@
 package edu.jsu.mcis.cs408.crosswordmagic.model;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Objects;
 
 public class Puzzle {
 
@@ -26,8 +29,8 @@ public class Puzzle {
 
         this.name = params.get("name");
         this.description = params.get("description");
-        this.height = Integer.parseInt(params.get("height"));
-        this.width = Integer.parseInt(params.get("width"));
+        this.height = Integer.parseInt(Objects.requireNonNull(params.get("height")));
+        this.width = Integer.parseInt(Objects.requireNonNull(params.get("width")));
 
         guessed = new HashSet<>();
         words = new HashMap<>();
@@ -151,6 +154,7 @@ public class Puzzle {
                 if (letters[i][j] == BLANK_CHAR) {
 
                     this.solved = false;
+                    break;
 
                 }
 

@@ -1,6 +1,9 @@
 package edu.jsu.mcis.cs408.crosswordmagic.model;
 
+import androidx.annotation.NonNull;
+
 import java.util.HashMap;
+import java.util.Objects;
 
 public class Word {
 
@@ -12,15 +15,15 @@ public class Word {
 
         try {
 
-            this.id = Integer.parseInt(params.get("_id"));
-            this.puzzleid = Integer.parseInt(params.get("puzzleid"));
-            this.row = Integer.parseInt(params.get("row"));
-            this.column = Integer.parseInt(params.get("column"));
-            this.box = Integer.parseInt(params.get("box"));
+            this.id = (params.get("_id") != null ? Integer.parseInt(params.get("_id")) : null);
+            this.puzzleid = Integer.parseInt(Objects.requireNonNull(params.get("puzzleid")));
+            this.row = Integer.parseInt(Objects.requireNonNull(params.get("row")));
+            this.column = Integer.parseInt(Objects.requireNonNull(params.get("column")));
+            this.box = Integer.parseInt(Objects.requireNonNull(params.get("box")));
             this.word = params.get("word");
             this.clue = params.get("clue");
 
-            this.direction = WordDirection.values()[Integer.parseInt(params.get("direction"))];
+            this.direction = WordDirection.values()[Integer.parseInt(Objects.requireNonNull(params.get("direction")))];
 
         }
         catch (Exception e) {
@@ -67,6 +70,22 @@ public class Word {
 
     public String getClue() {
         return clue;
+    }
+
+    @NonNull
+    public String toString() {
+
+        StringBuilder s = new StringBuilder();
+
+        s.append("ID: ").append(id).append(", ");
+        s.append("Word: ").append(word).append(", ");
+        s.append("Row/Col: ").append(row).append('/').append(column).append(", ");
+        s.append("Direction: ").append(direction).append(", ");
+        s.append("Box: ").append(box).append(", ");
+        s.append("Clue: ").append(clue);
+
+        return s.toString();
+
     }
 
 }

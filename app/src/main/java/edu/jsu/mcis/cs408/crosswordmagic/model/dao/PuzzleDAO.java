@@ -92,26 +92,30 @@ public class PuzzleDAO {
 
             cursor.moveToFirst();
 
-            HashMap<String, String> params = new HashMap<>();
-
             /* get data for puzzle */
 
-            params.put("name", cursor.getString(cursor.getColumnIndexOrThrow("name")));
-            params.put("description", cursor.getString(cursor.getColumnIndexOrThrow("description")));
-            params.put("height", cursor.getString(cursor.getColumnIndexOrThrow("height")));
-            params.put("width", cursor.getString(cursor.getColumnIndexOrThrow("width")));
+            HashMap<String, String> params = new HashMap<>();
 
-            if (!params.isEmpty())
+            /* get data for new puzzle */
+
+            params.put(daoFactory.getProperty("sql_field_name"), cursor.getString(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_name"))));
+            params.put(daoFactory.getProperty("sql_field_description"), cursor.getString(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_description"))));
+            params.put(daoFactory.getProperty("sql_field_height"), cursor.getString(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_height"))));
+            params.put(daoFactory.getProperty("sql_field_width"), cursor.getString(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_width"))));
+
+            if ( !params.isEmpty() )
                 puzzle = new Puzzle(params);
 
-            /* get words (if any) for puzzle */
+            /* get list of words (if any) to add to puzzle */
 
             WordDAO wordDao = daoFactory.getWordDAO();
 
             ArrayList<Word> words = wordDao.list(db, puzzleid);
 
-            if ( (!words.isEmpty()) && (puzzle != null) )
+            if ( !words.isEmpty() )
                 puzzle.addWordsToPuzzle(words);
+
+            cursor.close();
 
             /* get already-guessed words (if any) for puzzle */
 
@@ -131,8 +135,7 @@ public class PuzzleDAO {
                     Integer box = cursor.getInt(boxColumnIndex);
                     WordDirection direction = WordDirection.values()[cursor.getInt(directionColumnIndex)];
 
-                    if (puzzle != null)
-                        puzzle.addWordToGuessed(box + direction.toString());
+                    puzzle.addWordToGuessed(box + direction.toString());
 
                 }
                 while ( cursor.moveToNext() );
