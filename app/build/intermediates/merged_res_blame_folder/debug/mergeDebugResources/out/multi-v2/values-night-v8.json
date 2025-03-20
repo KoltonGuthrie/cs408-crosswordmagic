@@ -4,7 +4,7 @@
             "outputFile": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-30:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\guthr\\Desktop\\cs408-crosswordmagic\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\guthr\\AndroidStudioProjects\\cs408-crosswordmagic\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,12 +1,8 @@
 package edu.jsu.mcis.cs408.crosswordmagic.model.dao;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-
-import androidx.annotation.Nullable;
 
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
@@ -15,7 +11,6 @@ import com.opencsv.CSVReaderBuilder;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 

@@ -1,78 +1,94 @@
 [
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\layout_fragment_clue.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\fragment_clue.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/layout_activity_main.xml.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/activity_main.xml"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/xml_backup_rules.xml.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\raw_dao.properties.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\raw\\dao.properties"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\layout_fragment_puzzle.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\fragment_puzzle.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/raw_puzzle.csv.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/raw/puzzle.csv"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/drawable_ic_launcher_background.xml.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\layout_tab_container.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\tab_container.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-pngs-28:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/xml_data_extraction_rules.xml.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-pngs-28:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/raw_dao.properties.flat",
-        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/raw/dao.properties"
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:/layout_fragment_clue.xml.flat",
+        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/fragment_clue.xml"
+    },
+    {
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\raw_puzzle.csv.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\raw\\puzzle.csv"
+    },
+    {
+        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-debug-32:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\mipmap-mdpi\\ic_launcher.webp"
     }
 ]

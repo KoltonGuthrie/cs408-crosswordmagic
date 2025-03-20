@@ -2,7 +2,6 @@ package edu.jsu.mcis.cs408.crosswordmagic.model.dao;
 
 import android.content.Context;
 
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Properties;
 

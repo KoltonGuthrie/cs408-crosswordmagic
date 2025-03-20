@@ -26,10 +26,10 @@ edu.jsu.mcis.cs408.crosswordmagic.app-lifecycle-viewmodel-2.6.2-24 C:\Users\guth
 edu.jsu.mcis.cs408.crosswordmagic.app-lifecycle-process-2.6.2-25 C:\Users\guthr\.gradle\caches\8.10.2\transforms\d062058b2174096fe406e980b3bf2993\transformed\lifecycle-process-2.6.2\res
 edu.jsu.mcis.cs408.crosswordmagic.app-lifecycle-livedata-2.6.2-26 C:\Users\guthr\.gradle\caches\8.10.2\transforms\d06c30f9cdab0dc3602014f3927f91f3\transformed\lifecycle-livedata-2.6.2\res
 edu.jsu.mcis.cs408.crosswordmagic.app-constraintlayout-2.2.1-27 C:\Users\guthr\.gradle\caches\8.10.2\transforms\dcb355b4891e39f54a0c3098b1b7b3df\transformed\constraintlayout-2.2.1\res
-edu.jsu.mcis.cs408.crosswordmagic.app-pngs-28 C:\Users\guthr\Desktop\cs408-crosswordmagic\app\build\generated\res\pngs\debug
-edu.jsu.mcis.cs408.crosswordmagic.app-resValues-29 C:\Users\guthr\Desktop\cs408-crosswordmagic\app\build\generated\res\resValues\debug
-edu.jsu.mcis.cs408.crosswordmagic.app-packageDebugResources-30 C:\Users\guthr\Desktop\cs408-crosswordmagic\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-edu.jsu.mcis.cs408.crosswordmagic.app-packageDebugResources-31 C:\Users\guthr\Desktop\cs408-crosswordmagic\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-edu.jsu.mcis.cs408.crosswordmagic.app-debug-32 C:\Users\guthr\Desktop\cs408-crosswordmagic\app\build\intermediates\merged_res\debug\mergeDebugResources
-edu.jsu.mcis.cs408.crosswordmagic.app-debug-33 C:\Users\guthr\Desktop\cs408-crosswordmagic\app\src\debug\res
-edu.jsu.mcis.cs408.crosswordmagic.app-main-34 C:\Users\guthr\Desktop\cs408-crosswordmagic\app\src\main\res
+edu.jsu.mcis.cs408.crosswordmagic.app-pngs-28 C:\Users\guthr\AndroidStudioProjects\cs408-crosswordmagic\app\build\generated\res\pngs\debug
+edu.jsu.mcis.cs408.crosswordmagic.app-resValues-29 C:\Users\guthr\AndroidStudioProjects\cs408-crosswordmagic\app\build\generated\res\resValues\debug
+edu.jsu.mcis.cs408.crosswordmagic.app-packageDebugResources-30 C:\Users\guthr\AndroidStudioProjects\cs408-crosswordmagic\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+edu.jsu.mcis.cs408.crosswordmagic.app-packageDebugResources-31 C:\Users\guthr\AndroidStudioProjects\cs408-crosswordmagic\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+edu.jsu.mcis.cs408.crosswordmagic.app-debug-32 C:\Users\guthr\AndroidStudioProjects\cs408-crosswordmagic\app\build\intermediates\merged_res\debug\mergeDebugResources
+edu.jsu.mcis.cs408.crosswordmagic.app-debug-33 C:\Users\guthr\AndroidStudioProjects\cs408-crosswordmagic\app\src\debug\res
+edu.jsu.mcis.cs408.crosswordmagic.app-main-34 C:\Users\guthr\AndroidStudioProjects\cs408-crosswordmagic\app\src\main\res
