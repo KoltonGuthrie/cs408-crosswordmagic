@@ -2,6 +2,8 @@ package edu.jsu.mcis.cs408.crosswordmagic.model;
 
 import android.content.Context;
 
+import java.util.HashMap;
+
 import edu.jsu.mcis.cs408.crosswordmagic.controller.CrosswordMagicController;
 import edu.jsu.mcis.cs408.crosswordmagic.model.dao.DAOFactory;
 import edu.jsu.mcis.cs408.crosswordmagic.model.dao.PuzzleDAO;
@@ -26,6 +28,10 @@ public class CrosswordMagicModel extends AbstractModel {
         String wordCount = (this.puzzle != null ? String.valueOf(puzzle.getSize()) : "none");
         firePropertyChange(CrosswordMagicController.TEST_PROPERTY, null, wordCount);
 
+    }
+
+    public void setGuessProperty(HashMap<String, String> hmap) {
+        puzzle.setGuess(hmap);
     }
 
     public void getGridDimensionProperty() {

@@ -1,24 +1,31 @@
 package edu.jsu.mcis.cs408.crosswordmagic.view;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.text.InputType;
 import android.text.Layout;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
 import java.beans.PropertyChangeEvent;
+import java.util.HashMap;
 import java.util.Locale;
 
+import edu.jsu.mcis.cs408.crosswordmagic.R;
 import edu.jsu.mcis.cs408.crosswordmagic.controller.CrosswordMagicController;
+import edu.jsu.mcis.cs408.crosswordmagic.model.dao.PuzzleDAO;
 
 public class CrosswordGridView extends View implements AbstractView {
 
@@ -295,8 +302,32 @@ public class CrosswordGridView extends View implements AbstractView {
                 int n = numbers[y][x];
 
                 if (n != 0) {
-                    String text = String.format(Locale.getDefault(),"X: %d, Y: %d, Box: %d", x, y, n);
-                    Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+                    AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                    builder.setTitle(R.string.dialog_title);
+                    builder.setMessage(getResources().getString(R.string.dialog_message, n));
+                    final EditText input = new EditText(context);
+                    input.setInputType(InputType.TYPE_CLASS_TEXT);
+                    builder.setView(input);
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface d, int i) {
+                            String userInput = input.getText().toString();
+
+                            HashMap<String, String> hmap = new HashMap<>();
+                            hmap.put("guess", userInput);
+                            hmap.put("box", String.valueOf(n));
+                            controller.setGuessProperty(hmap);
+                        }
+                    });
+                    builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface d, int i) {
+                            String text = "No guess made";
+                            Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+                            d.cancel();
+                        }
+                    });
+                    AlertDialog aboutDialog = builder.show();
                 }
 
             }

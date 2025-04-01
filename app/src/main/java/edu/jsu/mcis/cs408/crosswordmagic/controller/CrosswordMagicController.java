@@ -1,5 +1,7 @@
 package edu.jsu.mcis.cs408.crosswordmagic.controller;
 
+import java.util.HashMap;
+
 public class CrosswordMagicController extends AbstractController {
 
     public static final String TEST_PROPERTY = "TestProperty";
@@ -9,6 +11,7 @@ public class CrosswordMagicController extends AbstractController {
     public static final String CLUE_ACROSS_PROPERTY = "ClueAcrossProperty";
     public static final String CLUE_DOWN_PROPERTY = "CluesDownProperty";
     public static final String CLUES_PROPERTY = "CluesProperty";
+    public static final String GUESS_PROPERTY = "GuessProperty";
 
     public void getTestProperty(String value) {
         getModelProperty(TEST_PROPERTY);
@@ -44,5 +47,6 @@ public class CrosswordMagicController extends AbstractController {
     public void getCluesProperty() {
         getModelProperty(CLUES_PROPERTY);
     }
+    public void setGuessProperty(HashMap<String, String> hmap) { setModelProperty(GUESS_PROPERTY, hmap);}
 
 }
