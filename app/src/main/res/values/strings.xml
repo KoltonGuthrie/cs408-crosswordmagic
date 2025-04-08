@@ -5,4 +5,6 @@
     <string name="clue_header_down">Down</string>
     <string name="dialog_title">Guess word</string>
     <string name="dialog_message">Enter your guess for box %1$d!</string>
+    <string name="crossword_magic_cover">"Crossword Magic"</string>
+    <string name="button_play">Play</string>
 </resources>

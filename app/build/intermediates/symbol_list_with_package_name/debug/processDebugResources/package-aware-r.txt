@@ -3108,6 +3108,7 @@ drawable notify_panel_notification_icon_bg
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable xxcover
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3211,6 +3212,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3245,6 +3247,7 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id cover
 id cradle
 id currentState
 id custom
@@ -3529,6 +3532,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner
 id spline
 id split_action_bar
 id spread
@@ -3740,6 +3744,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3863,6 +3868,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string button_play
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action
@@ -3876,6 +3882,9 @@ string character_counter_pattern
 string clear_text_end_icon_content_description
 string clue_header_across
 string clue_header_down
+string crossword_magic_cover
+string dialog_message
+string dialog_title
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

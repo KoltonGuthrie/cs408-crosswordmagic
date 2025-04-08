@@ -28,13 +28,17 @@
         android:testOnly="true"
         android:theme="@style/Theme.CrosswordMagic" >
         <activity
-            android:name="edu.jsu.mcis.cs408.crosswordmagic.view.MainActivity"
+            android:name="edu.jsu.mcis.cs408.crosswordmagic.view.WelcomeActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.jsu.mcis.cs408.crosswordmagic.view.MainActivity"
+            android:exported="true" >
         </activity>
 
         <provider

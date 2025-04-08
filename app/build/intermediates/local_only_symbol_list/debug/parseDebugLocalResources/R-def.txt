@@ -4,8 +4,11 @@ color black
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable xxcover
 id aContainer
 id aLabel
+id button
+id cover
 id dContainer
 id dLabel
 id fragment
@@ -14,8 +17,10 @@ id guideline
 id layout_clue
 id layout_puzzle
 id pager
+id spinner
 id tab_layout
 layout activity_main
+layout activity_welcome
 layout fragment_clue
 layout fragment_puzzle
 layout tab_container
@@ -24,8 +29,12 @@ mipmap ic_launcher_round
 raw dao
 raw puzzle
 string app_name
+string button_play
 string clue_header_across
 string clue_header_down
+string crossword_magic_cover
+string dialog_message
+string dialog_title
 string placeholder_text
 style Base.Theme.CrosswordMagic
 style Theme.CrosswordMagic
