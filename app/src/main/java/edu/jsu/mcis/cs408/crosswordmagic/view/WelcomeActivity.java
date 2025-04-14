@@ -1,12 +1,12 @@
 package edu.jsu.mcis.cs408.crosswordmagic.view;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.beans.PropertyChangeEvent;
 
@@ -15,7 +15,7 @@ import edu.jsu.mcis.cs408.crosswordmagic.databinding.ActivityWelcomeBinding;
 import edu.jsu.mcis.cs408.crosswordmagic.model.CrosswordMagicModel;
 import edu.jsu.mcis.cs408.crosswordmagic.model.PuzzleListItem;
 
-public class WelcomeActivity extends AppCompatActivity implements AbstractView, View.OnClickListener, AdapterView.OnItemSelectedListener {
+public class WelcomeActivity extends AppCompatActivity implements AbstractView, AdapterView.OnItemSelectedListener {
 
     private final String TAG = "WelcomeActivity";
 
@@ -33,7 +33,21 @@ public class WelcomeActivity extends AppCompatActivity implements AbstractView, 
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.button.setOnClickListener(this);
+        binding.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickPlay();
+            }
+        });
+
+        binding.button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickDownload();
+            }
+        });
+
+        //binding.button.setOnClickListener(this);
         binding.spinner.setOnItemSelectedListener(this);
 
         /* Create Controller and Model */
@@ -53,8 +67,14 @@ public class WelcomeActivity extends AppCompatActivity implements AbstractView, 
 
     }
 
-    @Override
-    public void onClick(View view) {
+    public void clickDownload() {
+
+        Intent i = new Intent(this, MenuActivity.class);
+        startActivity(i);
+
+    }
+
+    public void clickPlay() {
 
         Intent i = new Intent(this, MainActivity.class);
         i.putExtra("puzzleid", puzzleid);

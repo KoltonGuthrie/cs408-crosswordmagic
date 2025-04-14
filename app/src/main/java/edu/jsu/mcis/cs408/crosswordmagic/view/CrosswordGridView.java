@@ -21,11 +21,9 @@ import androidx.annotation.NonNull;
 
 import java.beans.PropertyChangeEvent;
 import java.util.HashMap;
-import java.util.Locale;
 
 import edu.jsu.mcis.cs408.crosswordmagic.R;
 import edu.jsu.mcis.cs408.crosswordmagic.controller.CrosswordMagicController;
-import edu.jsu.mcis.cs408.crosswordmagic.model.dao.PuzzleDAO;
 
 public class CrosswordGridView extends View implements AbstractView {
 
@@ -316,7 +314,7 @@ public class CrosswordGridView extends View implements AbstractView {
                             HashMap<String, String> hmap = new HashMap<>();
                             hmap.put("guess", userInput);
                             hmap.put("box", String.valueOf(n));
-                            controller.setGuessProperty(hmap);
+                            controller.setGuess(hmap);
                         }
                     });
                     builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {

@@ -7,4 +7,6 @@
     <string name="dialog_message">Enter your guess for box %1$d!</string>
     <string name="crossword_magic_cover">"Crossword Magic"</string>
     <string name="button_play">Play</string>
+    <string name="button_new">Get New Puzzles</string>
+    <string name="download_puzzle">Download and Play</string>
 </resources>

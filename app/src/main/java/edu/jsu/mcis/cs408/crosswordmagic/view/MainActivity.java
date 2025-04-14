@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements AbstractView {
 
     private ActivityMainBinding binding;
     private CrosswordMagicController controller;
+    Integer puzzleid = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +29,14 @@ public class MainActivity extends AppCompatActivity implements AbstractView {
         View view = binding.getRoot();
         setContentView(view);
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            puzzleid = extras.getInt("puzzleid");
+        }
+
         /* Create Controller and Model */
         controller = new CrosswordMagicController();
-        CrosswordMagicModel model = new CrosswordMagicModel(this);
+        CrosswordMagicModel model = new CrosswordMagicModel(this, puzzleid);
 
         /* Register View(s) and Model(s) with Controller */
         controller.addModel(model);

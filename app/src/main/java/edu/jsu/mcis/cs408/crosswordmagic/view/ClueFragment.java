@@ -33,7 +33,7 @@ public class ClueFragment extends Fragment implements AbstractView {
         controller.addView(this);
 
         // Request clues from the controller
-        controller.getCluesProperty();
+        controller.getClues();
     }
 
     @Override

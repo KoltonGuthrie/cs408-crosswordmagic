@@ -3213,6 +3213,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id button
+id button2
+id buttonDownloadPuzzle
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3481,9 +3483,13 @@ id postLayout
 id pressed
 id progress_circular
 id progress_horizontal
+id puzzleIdLabel
+id puzzleTextLabel
 id radio
 id ratio
 id rectangles
+id recyclerViewPuzzles
+id relativeLayout
 id report_drawn
 id reverseSawtooth
 id right
@@ -3744,6 +3750,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_menu
 layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3822,6 +3829,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout puzzle_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3868,6 +3876,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string button_new
 string button_play
 string call_notification_answer_action
 string call_notification_answer_video_action
@@ -3885,6 +3894,7 @@ string clue_header_down
 string crossword_magic_cover
 string dialog_message
 string dialog_title
+string download_puzzle
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
