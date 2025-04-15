@@ -1,12 +1,15 @@
 package edu.jsu.mcis.cs408.crosswordmagic.model;
 
 import android.content.Context;
+import android.util.Log;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.jsu.mcis.cs408.crosswordmagic.controller.CrosswordMagicController;
 import edu.jsu.mcis.cs408.crosswordmagic.model.dao.DAOFactory;
 import edu.jsu.mcis.cs408.crosswordmagic.model.dao.PuzzleDAO;
+import edu.jsu.mcis.cs408.crosswordmagic.model.dao.WebServiceDAO;
 
 public class CrosswordMagicModel extends AbstractModel {
 
@@ -15,10 +18,12 @@ public class CrosswordMagicModel extends AbstractModel {
     private Puzzle puzzle;
     private DAOFactory daoFactory;
     private PuzzleDAO puzzleDAO;
+    private WebServiceDAO webServiceDAO;
 
     public CrosswordMagicModel(Context context) {
         daoFactory = new DAOFactory(context);
         puzzleDAO = daoFactory.getPuzzleDAO();
+        webServiceDAO = daoFactory.getWebServiceDAO();
 
         this.puzzle = puzzleDAO.find(DEFAULT_PUZZLE_ID);
     }
@@ -75,6 +80,12 @@ public class CrosswordMagicModel extends AbstractModel {
     public void getPuzzleList() {
         PuzzleListItem[] result = puzzleDAO.list();
         firePropertyChange(CrosswordMagicController.PUZZLE_LIST_PROPERTY, null, result);
+    }
+
+    public void getPuzzleListFromAPI() {
+        ArrayList<PuzzleListItem> puzzles = webServiceDAO.list();
+
+        firePropertyChange(CrosswordMagicController.PUZZLE_LIST_FROM_API_PROPERTY, null, puzzles.toArray(new PuzzleListItem[puzzles.size()-1]));
     }
 
 }

@@ -1,34 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:\\layout\\puzzle_item.xml",
-        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\puzzle_item.xml"
+        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:/layout/fragment_puzzle.xml",
+        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/fragment_puzzle.xml"
     },
     {
-        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:\\layout\\activity_menu.xml",
-        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\activity_menu.xml"
+        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:\\layout\\activity_welcome.xml",
-        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\activity_welcome.xml"
+        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:/layout/tab_container.xml",
+        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/tab_container.xml"
     },
     {
-        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\activity_main.xml"
+        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:/layout/activity_welcome.xml",
+        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/activity_welcome.xml"
     },
     {
-        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:\\layout\\tab_container.xml",
-        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\tab_container.xml"
+        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:/layout/puzzle_item.xml",
+        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/puzzle_item.xml"
     },
     {
         "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:/layout/activity_menu.xml",
         "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/activity_menu.xml"
     },
     {
-        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:\\layout\\fragment_puzzle.xml",
-        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\fragment_puzzle.xml"
-    },
-    {
-        "merged": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:\\layout\\fragment_clue.xml",
-        "source": "C:\\Users\\guthr\\.gradle\\daemon\\8.10.2\\edu.jsu.mcis.cs408.crosswordmagic.app-main-34:\\layout\\fragment_clue.xml"
+        "merged": "edu.jsu.mcis.cs408.crosswordmagic.app-mergeDebugResources-31:/layout/fragment_clue.xml",
+        "source": "edu.jsu.mcis.cs408.crosswordmagic.app-main-34:/layout/fragment_clue.xml"
     }
 ]

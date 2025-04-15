@@ -2,7 +2,10 @@ package edu.jsu.mcis.cs408.crosswordmagic.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Adapter;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,8 +17,8 @@ import java.util.List;
 
 import edu.jsu.mcis.cs408.crosswordmagic.controller.CrosswordMagicController;
 import edu.jsu.mcis.cs408.crosswordmagic.databinding.ActivityMenuBinding;
+import edu.jsu.mcis.cs408.crosswordmagic.model.CrosswordMagicModel;
 import edu.jsu.mcis.cs408.crosswordmagic.model.PuzzleListItem;
-import edu.jsu.mcis.cs408.crosswordmagic.model.WebServiceModel;
 
 public class MenuActivity extends AppCompatActivity implements AbstractView{
     private ActivityMenuBinding binding;
@@ -29,10 +32,10 @@ public class MenuActivity extends AppCompatActivity implements AbstractView{
         View view = binding.getRoot();
         setContentView(view);
         controller = new CrosswordMagicController();
-        WebServiceModel webServiceModel = new WebServiceModel(this);
+        CrosswordMagicModel crosswordMagicModel = new CrosswordMagicModel(this);
 
         /* Register View(s) and Model(s) with Controller */
-        controller.addModel(webServiceModel);
+        controller.addModel(crosswordMagicModel);
         controller.addView(this);
 
         updateRecyclerView();
@@ -58,6 +61,7 @@ public class MenuActivity extends AppCompatActivity implements AbstractView{
         startActivity(i);
     }
 
+
     private void updateRecyclerView() {
         controller.getPuzzleListFromAPI();
     }
@@ -73,17 +77,10 @@ public class MenuActivity extends AppCompatActivity implements AbstractView{
             if (value instanceof PuzzleListItem[]) {
                 List<PuzzleListItem> puzzles = Arrays.asList((PuzzleListItem[])value);
 
-                // Took me 4 hours to find this fix :)
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        RecyclerViewAdapter adapter = new RecyclerViewAdapter(MenuActivity.this, puzzles);
-                        binding.recyclerViewPuzzles.setHasFixedSize(true);
-                        binding.recyclerViewPuzzles.setLayoutManager(new LinearLayoutManager(MenuActivity.this));
-                        binding.recyclerViewPuzzles.setAdapter(adapter);
-                    }
-                });
-
+                RecyclerViewAdapter adapter = new RecyclerViewAdapter(MenuActivity.this, puzzles);
+                binding.recyclerViewPuzzles.setHasFixedSize(true);
+                binding.recyclerViewPuzzles.setLayoutManager(new LinearLayoutManager(MenuActivity.this));
+                binding.recyclerViewPuzzles.setAdapter(adapter);
             }
 
         }
