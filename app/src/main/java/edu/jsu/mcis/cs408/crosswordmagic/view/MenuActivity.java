@@ -2,10 +2,7 @@ package edu.jsu.mcis.cs408.crosswordmagic.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,11 +51,7 @@ public class MenuActivity extends AppCompatActivity implements AbstractView{
 
     public void downloadPuzzle(PuzzleListItem puzzleListItem) {
         int puzzleId = puzzleListItem.getId();
-
-        Intent i = new Intent(this, MainActivity.class);
-        //i.putExtra("puzzleid", puzzleId);
-        i.putExtra("puzzleid", 1);
-        startActivity(i);
+        controller.getDownloadPuzzle(puzzleId);
     }
 
 
@@ -82,6 +75,13 @@ public class MenuActivity extends AppCompatActivity implements AbstractView{
                 binding.recyclerViewPuzzles.setLayoutManager(new LinearLayoutManager(MenuActivity.this));
                 binding.recyclerViewPuzzles.setAdapter(adapter);
             }
+
+        }
+        else if(name.equals(CrosswordMagicController.DOWNLOAD_PUZZLE_PROPERTY)) {
+
+            Intent i = new Intent(this, MainActivity.class);
+            i.putExtra("puzzleid", (int) value);
+            startActivity(i);
 
         }
 

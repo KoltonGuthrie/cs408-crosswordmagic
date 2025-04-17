@@ -162,25 +162,27 @@ public class PuzzleDAO {
 
         if (cursor.moveToFirst()) {
 
-            PuzzleListItem puzzleListItem = null;
-
             cursor.moveToFirst();
 
-            /* get data for puzzle */
+            do {
 
-            /* get data for puzzle */
+                PuzzleListItem puzzleListItem = null;
 
-            //params.put(daoFactory.getProperty("sql_field_puzzleid"), cursor.getString(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_puzzleid"))));
-            int id = cursor.getInt(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_id")));
-            String name = cursor.getString(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_name")));
+                /* get data for puzzle */
 
-            puzzleListItem = new PuzzleListItem(id, name);
+                //params.put(daoFactory.getProperty("sql_field_puzzleid"), cursor.getString(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_puzzleid"))));
+                int id = cursor.getInt(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_id")));
+                String name = cursor.getString(cursor.getColumnIndexOrThrow(daoFactory.getProperty("sql_field_name")));
 
-            cursor.close();
+                puzzleListItem = new PuzzleListItem(id, name);
 
-            result.add(puzzleListItem);
+                result.add(puzzleListItem);
 
-        }
+            } while ( cursor.moveToNext() );
+
+                cursor.close();
+
+            }
 
         return result.toArray(new PuzzleListItem[]{});
 

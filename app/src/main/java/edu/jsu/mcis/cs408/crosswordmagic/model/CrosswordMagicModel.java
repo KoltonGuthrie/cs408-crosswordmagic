@@ -1,7 +1,6 @@
 package edu.jsu.mcis.cs408.crosswordmagic.model;
 
 import android.content.Context;
-import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -86,6 +85,12 @@ public class CrosswordMagicModel extends AbstractModel {
         ArrayList<PuzzleListItem> puzzles = webServiceDAO.list();
 
         firePropertyChange(CrosswordMagicController.PUZZLE_LIST_FROM_API_PROPERTY, null, puzzles.toArray(new PuzzleListItem[puzzles.size()-1]));
+    }
+
+    public void getDownloadPuzzle(Integer id) {
+        int puzzleId = webServiceDAO.downloadPuzzle(id);
+
+        firePropertyChange(CrosswordMagicController.DOWNLOAD_PUZZLE_PROPERTY, null, puzzleId);
     }
 
 }

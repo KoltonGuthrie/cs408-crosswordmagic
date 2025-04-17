@@ -14,6 +14,7 @@ public class CrosswordMagicController extends AbstractController {
     public static final String GUESS_PROPERTY = "Guess";
     public static final String PUZZLE_LIST_PROPERTY = "PuzzleList";
     public static final String PUZZLE_LIST_FROM_API_PROPERTY = "PuzzleListFromAPI";
+    public static final String DOWNLOAD_PUZZLE_PROPERTY = "DownloadPuzzle";
 
     public void getTestProperty(String value) {
         getModelProperty(TEST_PROPERTY);
@@ -52,4 +53,8 @@ public class CrosswordMagicController extends AbstractController {
     public void getPuzzleList() { getModelProperty(PUZZLE_LIST_PROPERTY); }
     public void getPuzzleListFromAPI() { getModelProperty(PUZZLE_LIST_FROM_API_PROPERTY); }
     public void setGuess(HashMap<String, String> hmap) { setModelProperty(GUESS_PROPERTY, hmap); }
+
+    public void getDownloadPuzzle(int puzzleId) {
+        getModelProperty(DOWNLOAD_PUZZLE_PROPERTY, puzzleId);
+    }
 }
